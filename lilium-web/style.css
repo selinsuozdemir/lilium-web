@@ -1,0 +1,246 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-image: url('photos/background2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: rgb(0, 0, 0); 
+  }
+
+  /* Navigasyon barı için stil */
+.navbar {
+    overflow: hidden; /* İçeriğin taşmaması için */
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Liste işaretlerini kaldır */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ortalanmış liste */
+  }
+  
+  .navbar ul li {
+    display: inline; /* Elemanları yatayda diz */
+  }
+  
+  .navbar ul li a {
+    display: inline-block;
+    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+
+  .navbar ul li.logo {
+    position: absolute;
+    left: 50px;
+  }
+  
+  .navbar ul li.logo a {
+    font-weight: bold;
+    font-size: 22px; /* Liliumewv için daha büyük font */
+  }
+  
+  .navbar ul li.logo img.logo-img {
+    width: 40px;  /* Çiçek logosunun boyutu */
+    height: auto; /* Yüksekliği orantılı olarak ayarla */
+    margin-right: 10px; /* Liliumewv metni ile logo arasına boşluk ekle */
+    vertical-align: middle; /* Logoyu metinle ortala */
+  }
+
+  
+.navbar ul li.contact {
+    display: inline-block;
+    padding: 5px 10px; 
+    background-color: #f4d1fd; 
+    border-radius: 40px;
+    position: absolute;
+    right: 50px;  /
+  }
+  
+  .navbar ul li.contact a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  /* Hover etkisi */
+  .navbar ul li.contact:hover {
+    background-color: #b1639d; /* Kutu renk değişimi hover ile */
+  }
+  
+  .mainflower {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Sayfa yüksekliğini kaplasın */
+  }
+
+  
+  
+  .lilium-image {
+    position: absolute;
+    top: 25%;           /* Sayfanın üstünden biraz aşağıda */
+    left: 50%;          /* Ortalamanın yarısı */
+    transform: translateX(-50%); /* Yatayda tam ortala */
+    width: 450px;       /* İsteğe göre boyutlandır */
+    height: auto;       /* Orantılı kalsın */
+    z-index: 5;     
+  }
+  
+  .flower-bg {
+    position: absolute;
+    top: 50%;             /* Lilium’un biraz altında */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1500px;
+    height: auto;
+    z-index: 2;           /* Alt katmanda */
+    border-radius: 40px;  /* Köşeleri yumuşatma */
+  }
+ 
+  .lov-image {
+    position: absolute;
+    top: 45%;             /* Lilium’un biraz altında */
+    right: 10%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;           /* Alt katmanda */
+    border-radius: 50px;  /* Köşeleri yumuşatma */
+  }
+
+  .lov-title {
+    position: absolute;
+    top: 82%;              /* Görsele göre ayarla, gerekirse değiştir */
+    right: 11%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 19px;
+    color: #053105;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .caption1 {
+    position: absolute;
+    top: 7%;              /* Görsele göre ayarla, gerekirse değiştir */
+    left: 50%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-family:'Playfair Display', sans;
+    font-style: italic;
+    font-size: 70px;
+    color: #000000;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 2;
+    text-align: center;
+  }
+  .top {
+    display: block;
+    margin-bottom: 10px;  /* Üstteki kelimelere biraz mesafe ekleyebiliriz */
+  }
+  
+  .lisia {
+    position: absolute;
+    top: 45%;             /* Lilium’un biraz altında */
+    left: 27%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    z-index: 3;           /* Alt katmanda */
+    border-radius: 50px;  /* Köşeleri yumuşatma */
+  }
+
+  .lilium-title {
+    position: absolute;
+    top: 71%;              /* Görsele göre ayarla, gerekirse değiştir */
+    right: 44%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: #f1a9a9;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .lisi-title {
+    position: absolute;
+    top:60%;              /* Görsele göre ayarla, gerekirse değiştir */
+    right: 67%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 19px;
+    color: #f3f8eb;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .sakura {
+    position: absolute;
+    top: 67%;             /* Lilium’un biraz altında */
+    left: 22%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: auto;
+    z-index: 3;           /* Alt katmanda */
+    border-radius: 50px;  /* Köşeleri yumuşatma */
+  }
+
+  .sakura-title {
+    position: absolute;
+    top: 84%;              /* Görsele göre ayarla, gerekirse değiştir */
+    left: 22%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 19px;
+    color: #ac6a61;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .kamelya {
+    position: absolute;
+    top: 67%;             /* Lilium’un biraz altında */
+    right: 22%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+    z-index: 3;           /* Alt katmanda */
+    border-radius: 50px;  /* Köşeleri yumuşatma */
+  }
+
+  .kamelya-title {
+    position: absolute;
+    top: 90%;              /* Görsele göre ayarla, gerekirse değiştir */
+    right: 29%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 19px;
+    color: #c54092;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .para {
+    position: absolute;
+    top: 23%;              /* Görsele göre ayarla, gerekirse değiştir */
+    left: 86%;          /* .lov-image ile hizalı olacak şekilde ayarlandı */
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #000000;
+    padding: 4px 8px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+  .sentence {
+    display: block;     /* Her cümleyi yeni satıra yerleştir */
+    margin-bottom: 5px;  /* Her cümle arasına boşluk ekle */
+  }
+  
+ 
+ 
+ 
